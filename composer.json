@@ -1,6 +1,8 @@
 {
+    "name": "jketelaar/symfony-json-api-base",
+    "description": "A minimal Symfony project with a few extra packages to make a JSON API possible",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
     "require": {
         "php": "^7.1.3",
         "ext-ctype": "*",
