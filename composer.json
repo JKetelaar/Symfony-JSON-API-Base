@@ -3,6 +3,7 @@
     "description": "A minimal Symfony project with a few extra packages to make a JSON API possible",
     "type": "project",
     "license": "MIT",
+    "minimum-stability": "dev",
     "require": {
         "php": "^7.1.3",
         "ext-ctype": "*",
@@ -45,15 +46,14 @@
         "paragonie/random_compat": "2.*",
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*",
         "symfony/polyfill-php71": "*",
         "symfony/polyfill-php70": "*",
         "symfony/polyfill-php56": "*"
     },
     "scripts": {
-        "auto-scripts": {
-            "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
-        },
+        "auto-scripts": [
+        ],
         "post-install-cmd": [
             "@auto-scripts"
         ],
@@ -66,8 +66,8 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": true,
-            "require": "4.3.*"
+            "allow-contrib": false,
+            "require": "5.0.*"
         }
     }
 }
